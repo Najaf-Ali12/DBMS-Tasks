@@ -1,0 +1,23 @@
+create table st_info(
+st_no char(90),
+Adm_date Date,
+st_name TEXT,
+st_age INT,
+st_address  text)
+create table courses(
+c_no int,
+c_name text,
+c_teacher text,
+c_credit_hours int)
+insert into st_info
+values(1,22-06-2023,"Najaf Ali",19,"Alkhani street Dadu"),
+(2,23-06-2023,"Majid Ali",20,"Alkhani street Dadu"),
+(3,24-06-2023,"Wajid Ali",21,"Alkhani street Dadu"),
+(4,25-06-2023,"zahid Ali",22,"Alkhani street Dadu"),
+(5,26-06-2023,"baban Ali",23,"Alkhani street Dadu")
+insert into courses
+values(1,"Artificial Intelligence","Akhtar Jalbani",3),
+(2,"Computer Vision","Ali Asghar Chandio",3),
+(3,"Data Structures and Algorithms","Muhammad Awais Rehmani",3),
+(4,"Linear Algebra","Ajeeb Rehman Junejo",3),
+(5,"Machine Learning","Ali Asghar Chandio",3)
