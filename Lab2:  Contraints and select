@@ -1,0 +1,49 @@
+CREATE TABLE EMPLOYEE(
+emp_id Varchar(20) PRIMARY KEY,
+name char(20) NOT NULL,
+Age int NOT NULL,
+Address varchar(100),
+salary float Not NULL)
+
+insert into EMPLOYEE
+values("Emp_1","Danish",28,"Nawabshah",20000),
+("Emp_2","Khuram",32,"Hyderabad",15000),
+("Emp_3","Ahmed",25,"Karachi",20000),
+("Emp_4","Adnan",23,"Sukkur",65000),
+("Emp_5","Bilal",27,"Larkana",30000),
+("Emp_6","Imran",22,"Larkana",40000),
+("Emp_7","Ayaz",24,"Karachi",50000)
+
+SELECT * FROM EMPLOYEE
+select * from EMPLOYEE WHERE Address="NAWABSHAH" AND Address="LARKANA"
+emp_id	Name	Age        Address	Salary
+
+select emp_id,salary,emp_id from EMPLOYEE WHERE salary>=30000
+its output is
+Emp_id	Salary	 Address
+Emp_4	65000.0	Sukkur
+Emp_5	30000.0	Larkana
+Emp_6	40000.0	Larkana
+Emp_7	50000.0	Karachi
+
+select name,age,Address from EMPLOYEE WHERE age<=27
+its output is 
+Name	Age	Address
+Ahmed	25	Karachi
+Adnan	23	Sukkur
+Bilal	27	Larkana
+Imran	22	Larkana
+Ayaz	24	Karachi
+
+select * from EMPLOYEE WHERE Address="Larkana"
+its output is 
+Emp_id     Name        Age            Address	Salary
+Emp_5	Bilal	27	Larkana	30000.0
+Emp_6	Imran	22	Larkana	40000.0
+
+select name,salary,Address from EMPLOYEE WHERE salary>=65000 or Address="Lahore"
+Name	Salary	Address
+Adnan	65000.0	Sukkur
+
+
+
