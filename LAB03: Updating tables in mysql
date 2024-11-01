@@ -1,0 +1,31 @@
+QN0:1:
+create database University;
+QNO2:
+use university;
+ create table Student(
+    -> Roll_No char(10),
+    -> Name varchar(20),
+    -> Address varchar(50),
+    -> Age int,
+    -> Department varchar(30));
+QNO3:
+INSERT INTO Student
+    -> Values("11IT01","Kamran","Nawabshah",23,"IT"),
+    -> ("11IT02","Bilal","Hyderabad",22,"IT"),
+    -> ("11EE01","Irfan","Karachi",23,"EE"),
+    -> ("11CE01","Hina","Hyderabad",22,"CE");
+QNO4:
+Alter table Student
+    -> add F_name varchar(20);
+QNO5:
+ alter table student
+    -> modify column Roll_No varchar(10);
+QNO6:
+ alter table student
+    -> drop column F_Name;
+Q7:
+a) It will change the address of roll_no 11IT02 from Hyderabad to Larkana
+b) It will delete all the rows from tables whose roll_no is equal to 11EE01
+c) It will update the data of all students , first it will convert address of all to "Nawabshah" and then department to "ME"
+d) It will drop the table student from database university
+e) It will drop the whole database university  
