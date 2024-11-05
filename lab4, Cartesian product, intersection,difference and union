@@ -1,0 +1,28 @@
+Create Database Business
+
+CREATE table customers(
+Cust_id INT,
+Cust_name char(20))
+create table sales(
+Cust_id int,
+item char(50))
+
+
+insert into customers
+values(101,"Ahmed"),
+(102,"Kamran"),
+(103,"Faizan")
+
+insert into sales
+values(101,"Computer"),
+(102,"Monitor"),
+(103,"Printer"),
+(104,"Camera")
+
+select * from customers
+INTERSECT
+select * from sales
+
+select * from customers
+EXCEPT
+select * from sales
